@@ -1,14 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
+/* khôi phục lại cỡ chữ mặc định theo rem */
 body {
-  font: size 1.6rem;
-  font-family: "Poppins", serif;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
 }
-/* common */
+/* =================common================== */
 a {
   text-decoration: none;
 }
@@ -21,27 +16,27 @@ a {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  background: #171100;
   border-radius: 24.5px;
+  background: #171100;
 }
-/* header */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =================header================== */
 .header {
-  background: rgb(228, 223, 212);
+  background: #fffcf4;
 }
-.header .fixed {
+.header.fixed {
   position: sticky;
-  top: -8px;
+  top: -28px;
 }
 .header .body {
   display: flex;
   align-items: center;
   padding: 36px 0 8px;
-}
-.main-content {
-  max-width: calc(100% - 48px);
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .nav {
   margin-left: auto;
@@ -51,12 +46,11 @@ a {
 }
 .nav a {
   position: relative;
-  font-size: 1.6rem;
   color: #5f5b53;
-  /* background-color: blue; */
+  font-size: 1.6rem;
   padding: 8px 21px;
 }
-.nav li.active ah,
+.nav li.active a,
 .nav a:hover {
   color: #171100;
   /* font-weight: 600; */
